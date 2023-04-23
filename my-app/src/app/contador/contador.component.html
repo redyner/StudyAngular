@@ -1,0 +1,11 @@
+<p>contador works!</p>
+
+<p>Contador: 
+    <button [disabled]="valor<=0" (mousedown)="subtrairPressionado()" (mouseup)="parar()" (mouseleave)="parar()">-</button>
+    {{valor}}
+    <button [disabled]="valor>=10" (mousedown)="adicionarPressionado()" (mouseup)="parar()" (mouseleave)="parar()">+</button>
+</p>
+
+
+
+

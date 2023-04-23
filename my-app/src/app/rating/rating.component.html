@@ -1,0 +1,3 @@
+<span *ngFor="let star of stars" class="stars material-icons" (click)="onClick(star)">
+    {{rating!= null && rating >= star ? 'star' : 'star_outline'}}
+</span>
