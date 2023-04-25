@@ -7,6 +7,8 @@ import { TodoItem } from './todo-item-interface';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent {
+  
+  newTask: string = '';
 
   tasks: TodoItem[] = [
     {description: 'Iniciar estudo de Angular', done: true},
@@ -14,9 +16,9 @@ export class TodoListComponent {
     {description: 'Criar Site AM', done: false}
   ];
 
-addTask(inputDescription: string)
+addTask()
 {
-  this.tasks.push({description: inputDescription, done: false });
+  this.tasks.push({description: this.newTask, done: false });
 }
 
 deleteTask(i: number)

@@ -8,6 +8,9 @@ import { WinnerModalComponent } from './modais/winner-modal/winner-modal.compone
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { FilmesComponent } from './filmes/filmes.component';
 import { RatingComponent } from './rating/rating.component';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { RatingComponent } from './rating/rating.component';
     WinnerModalComponent,
     TodoListComponent,
     FilmesComponent,
-    RatingComponent
+    RatingComponent,
+    PanelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
